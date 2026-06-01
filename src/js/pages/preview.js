@@ -1,3 +1,5 @@
+import { renderizarPagina } from "../main.js"
+
 export const criarPreview = (preview) => {
     const formulario = document.createElement('form')
 
@@ -33,6 +35,7 @@ export const criarPreview = (preview) => {
     btnCancelar.className = 'button'
     btnCancelar.type = 'button'
     btnCancelar.textContent = 'Cancelar'
+    btnCancelar.onclick = () => renderizarPagina('login')
 
     buttonContainer.replaceChildren(btnSalvar, btnCancelar)
 
