@@ -1,3 +1,5 @@
+import { renderizarPagina } from "../main.js"
+
 export function criarLogin() {
     const formulario = document.createElement('form')
 
@@ -20,7 +22,7 @@ export function criarLogin() {
     loginButton.type = 'button'
     loginButton.textContent = 'ENTRAR'
     loginButton.className = 'button'
-    
+    loginButton.onclick = () => renderizarPagina('preview')    
 
     formulario.replaceChildren(emailInput, senhaInput, loginButton)
 
