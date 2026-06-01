@@ -5,8 +5,7 @@ import { uploadParaCloudinary } from './cloudinay.js'
 
 function preview ({target}) {
     document.getElementById('preview-image')
-            .src = URL.createObjectURL(target.files[0])
-   
+            .src = URL.createObjectURL(target.files[0]) 
 }
 async function enviarFoto() {
         const input = document.getElementById('preview-input')
